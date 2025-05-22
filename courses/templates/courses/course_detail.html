@@ -1,0 +1,25 @@
+<!-- courses/templates/courses/course_detail.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ course.name }}</title>
+</head>
+<body>
+    <h1>{{ course.name }}</h1>
+    <p><strong>Description:</strong> {{ course.description }}</p>
+    <p><a href="{% url 'course_list' %}">Back to Course List</a></p>
+
+
+  <!-- ✅ Enroll button block goes here -->
+    {% if user.is_authenticated %}
+        <form action="{% url 'enroll_in_course' course.id %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Enroll in this course</button>
+        </form>
+    {% else %}
+        <p><a href="{% url 'login' %}">Log in</a> to enroll</p>
+    {% endif %}
+
+
+</body>
+</html>
