@@ -18,7 +18,7 @@ I tried to cover the key features that are needed in a real campus system using 
 
 The system supports three types of users:
 
-- Admin– Can manage users, courses, and monitor activities
-- Teacher – Can add assignments, view submissions, and grade students
-- Student – Can enroll in courses and submit assignments
+- Admin – Can manage users, courses, and monitor activities.
+- Teacher – Can add assignments, view submissions, and grade students.
+- Student – Can enroll in courses and submit assignments.
 
