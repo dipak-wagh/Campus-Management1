@@ -1,4 +1,4 @@
-# Campus Management System 
+Campus Management System
 
 This is my Django-based project called Campus Management System, which I built to manage users, courses, and assignments in a college environment. 
 I tried to cover the key features that are needed in a real campus system using Python and Django.
